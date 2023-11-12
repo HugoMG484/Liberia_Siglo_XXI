@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Configuración del documento HTML -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Siglo XXI</title>
+    <!-- Enlace al archivo de estilos externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Título principal de la página -->
+        <h1>Librería Siglo XXI</h1>
+        <!-- Subtítulo indicando que se trata de una lista de libros -->
+        <h3>Lista de libros</h3>
+
+        <!-- Contenedor de la barra de búsqueda -->
+        <div class="search-container">
+            <!-- Input de texto para la búsqueda con un evento oninput que llama a la función searchBooks() -->
+            <input type="text" id="searchInput" placeholder="Buscar por título" oninput="searchBooks()">
+        </div>
+
+        <!-- Tabla para mostrar la lista de libros -->
+        <table>
+            <!-- Encabezado de la tabla -->
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Capítulos</th>
+                    <th>Páginas</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <!-- Cuerpo de la tabla donde se agregarán dinámicamente las filas con datos de libros -->
+            <tbody id="librosTableBody"></tbody>
+        </table>
+
+    </div>
+
+    <!-- Enlace al archivo de scripts externo -->
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
